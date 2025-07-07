@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @AllArgsConstructor
 public class StoredIntController {
-    private StoreIntService storeIntService;
+  private StoreIntService storeIntService;
 
-    @GetMapping("/stored-int")
-    public int getStoredInd() {
-        return storeIntService.getStoredInt();
-    }
+  @GetMapping("/stored-int")
+  public int getStoredInd() {
+    return storeIntService.getStoredInt();
+  }
 }
